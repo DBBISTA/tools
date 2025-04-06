@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Tools Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .welcome-banner {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 4px solid #FF9800;
+            margin-bottom: 1rem;
+        }
+        
+        .welcome-banner p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .welcome-banner strong {
+            color: #FF9800;
+        }
+        
+        /* AdMob ad container styles */
+        .admob-container {
+            width: 100%;
+            max-width: 728px;
+            margin: 1rem auto;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .admob-container.top-ad {
+            margin-top: 1rem;
+        }
+        
+        .admob-container.bottom-ad {
+            margin-bottom: 1rem;
+        }
+        
+        .admob-container iframe {
+            border: none;
+            width: 100%;
+            height: 90px;
+        }
+        
+        @media (min-width: 728px) {
+            .admob-container iframe {
+                height: 90px;
+            }
+        }
+        
+        @media (min-width: 970px) {
+            .admob-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Our Multi Tools</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search tools...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Welcome Banner -->
+    <div class="welcome-banner">
+        <p>Use our <strong>Multi-Tools</strong> to make digital work easier and more enjoyable.</p>
+    </div>
+
+    <!-- Top Ad Section - AdMob -->
+    <div class="admob-container top-ad">
+        <iframe src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-9539120037372862/9294720879" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="tools-grid">
+            <h2>Our Tools</h2>
+            <div class="tools-container">
+                <!-- Image Tools -->
+                <div class="tool-card">
+                    <i class="fas fa-compress"></i>
+                    <h3>Image Compressor</h3>
+                    <p>Compress your images without losing quality</p>
+                    <a href="tools/image-compressor.html" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Image Converter</h3>
+                    <p>Convert images between different formats</p>
+                    <a href="tools/image-converter.html" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-file-image"></i>
+                    <h3>WebP to PNG</h3>
+                    <p>Convert WebP images to high-quality PNG format</p>
+                    <a href="tools/webp-to-png.html" class="tool-link">Convert WebP to PNG</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Screenshot to PDF</h3>
+                    <p>Convert screenshots into high-quality PDF files</p>
+                    <a href="tools/screenshot-to-pdf.html" class="tool-link">🔄 Convert Screenshot to PDF</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-file-word"></i>
+                    <h3>PDF to Word</h3>
+                    <p>Convert PDF files into editable Word documents</p>
+                    <a href="tools/pdf-to-word.html" class="tool-link">Convert PDF to Word</a>
+                </div>
+
+                <!-- Calculator Tools -->
+                <div class="tool-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>EMI Calculator</h3>
+                    <p>Calculate your monthly EMI payments</p>
+                    <a href="tools/emi-calculator.html" class="tool-link">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Percentage Calculator</h3>
+                    <p>Calculate percentages for any situation</p>
+                    <a href="tools/percentage-calculator.html" class="tool-link">Calculate Percentage</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Discount Calculator</h3>
+                    <p>Calculate discounts and final prices</p>
+                    <a href="tools/discount-calculator.html" class="tool-link">Calculate Discount</a>
+                </div>
+
+                <!-- Converter Tools -->
+                <div class="tool-card">
+                    <i class="fas fa-ruler"></i>
+                    <h3>Length Converter</h3>
+                    <p>Convert between different units of length</p>
+                    <a href="tools/length-converter.html" class="tool-link">Convert Length</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-weight"></i>
+                    <h3>Weight Converter</h3>
+                    <p>Convert between different units of weight</p>
+                    <a href="tools/weight-converter.html" class="tool-link">Convert Weight</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Temperature Converter</h3>
+                    <p>Convert between temperature units</p>
+                    <a href="tools/temperature-converter.html" class="tool-link">Convert Temperature</a>
+                </div>
+
+                <!-- Utility Tools -->
+                <div class="tool-card">
+                    <i class="fas fa-copy"></i>
+                    <h3>Word Counter</h3>
+                    <p>Count words, characters, and paragraphs</p>
+                    <a href="tools/word-counter.html" class="tool-link">Count Words</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Age Calculator</h3>
+                    <p>Calculate your exact age in years, months, and days</p>
+                    <a href="tools/age-calculator.html" class="tool-link">Calculate Age</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-weight-scale"></i>
+                    <h3>BMI Calculator</h3>
+                    <p>Calculate your Body Mass Index</p>
+                    <a href="tools/bmi-calculator.html" class="tool-link">Calculate BMI</a>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Internet Speed Tester</h3>
+                    <p>Test your Internet connection speed</p>
+                    <a href="tools/speed-tester.html" class="tool-link">Test Speed</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Ad Section - AdMob -->
+    <div class="admob-container bottom-ad">
+        <iframe src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-9539120037372862/2914813653" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Created By: DBBISTA</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Multi-Tools Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- AdMob Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-9539120037372862" crossorigin="anonymous"></script>
+</body>
+</html> 
